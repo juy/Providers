@@ -31,7 +31,7 @@ Juy\Providers\ServiceProvider::class,
 Publish config file.
 
 ```
-php artisan vendor:publish --provider="Juy\Providers\CharacterSolver" --tag="config"
+php artisan vendor:publish --provider="Juy\Providers\ServiceProvider" --tag="config"
 ```
 
 ## Usage
