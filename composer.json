@@ -1,0 +1,22 @@
+{
+    "name": "juy/providers",
+    "description": "Laravel package to load providers and aliases use a config file.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sevdin Filiz",
+            "email": "sevdin.filiz@gmail.com",
+            "homepage": "http://www.juysoft.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.1.*|5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Juy\\Providers\\": "src/"
+        }
+    }
+}
