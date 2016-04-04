@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## Development
 
 - Add a config sample to README
+- Modify README, remove comma from composer.json part
 
 ## 1.0.1
 
