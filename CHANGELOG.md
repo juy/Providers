@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Development
+
+- Add a config sample to README
+
 ## 1.0.1
 
 - Fix README file
