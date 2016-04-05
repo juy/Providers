@@ -15,7 +15,7 @@ We usually use a providers file for load local providers, vendor providers, alia
 Add this package to your `composer.json` file and run `composer update` once.
 
 ```json
-"juy/providers": "1.*",
+"juy/providers": "1.*"
 ```
 
 ### Service provider
@@ -37,6 +37,95 @@ php artisan vendor:publish --provider="Juy\Providers\ServiceProvider" --tag="con
 ## Usage
 
 You can add providers to `config/providers.php` file.
+
+### A config sample for  as
+
+```php
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Autoloaded Service Providers
+    |--------------------------------------------------------------------------
+    */
+
+   'providers' => [
+       /*
+        * Application Service Providers
+        */
+       'app' => [
+           // ...
+       ],
+
+       /*
+        * Vendor Service Providers
+        */
+       'vendor' => [
+            Collective\Html\HtmlServiceProvider::class,
+            Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+            Juy\CharacterSolver\ServiceProvider::class,
+            Juy\ActiveMenu\ServiceProvider::class,
+       ],
+
+       /*
+        * Development/Local Service Providers
+        */
+        'local' => [
+            Barryvdh\Debugbar\ServiceProvider::class,
+            Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+            Clockwork\Support\Laravel\ClockworkServiceProvider::class,
+        ],
+        
+       /*
+        * Production Service Providers
+        */
+        'production' => [
+            GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
+        ]
+   ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Class Aliases
+    |--------------------------------------------------------------------------
+    */
+
+    'aliases' => [
+        /*
+         * Application Aliases
+         */
+        'app' => [
+            // ...
+        ],
+
+        /*
+         * Vendor Aliases
+         */
+        'vendor' => [
+            'Html' => Collective\Html\HtmlFacade::class,
+            'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+            'Active' => Juy\ActiveMenu\Facades\Active::class,
+        ],
+
+        /*
+         * Development/Local Aliases
+         */
+        'local' => [
+            'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        ],
+        
+       /*
+        * Production Aliases
+        */
+        'production' => [
+            'HTMLMin' => GrahamCampbell\HTMLMin\Facades\HTMLMin::class,
+        ]
+    ]
+];
+
+```
 
 ----------
 
