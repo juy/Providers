@@ -75,7 +75,15 @@ return [
         'local' => [
             Barryvdh\Debugbar\ServiceProvider::class,
             Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+            Clockwork\Support\Laravel\ClockworkServiceProvider::class,
         ],
+        
+       /*
+        * Production Service Providers
+        */
+        'production' => [
+            GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
+        ]
    ],
 
     /*
@@ -107,6 +115,13 @@ return [
         'local' => [
             'Debugbar' => Barryvdh\Debugbar\Facade::class,
         ],
+        
+       /*
+        * Production Aliases
+        */
+        'production' => [
+            'HTMLMin' => GrahamCampbell\HTMLMin\Facades\HTMLMin::class,
+        ]
     ]
 ];
 

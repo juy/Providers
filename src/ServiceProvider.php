@@ -50,6 +50,16 @@ class ServiceProvider extends IlluminateServiceProvider
                 // Register Local aliases
                 $this->registerAliases($this->app['config']->get('providers.aliases.local'));
             }
+            
+            // Production
+            if ($this->app['config']->get('app.env') === 'production')
+            {
+                // Register Local providers
+                $this->registerServices($this->app['config']->get('providers.providers.production'));
+
+                // Register Local aliases
+                $this->registerAliases($this->app['config']->get('providers.aliases.production'));
+            }
         }
     }
 

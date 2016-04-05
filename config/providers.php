@@ -34,6 +34,13 @@ return [
         'local' => [
             // ...
         ],
+        
+       /*
+        * Production Service Providers
+        */
+        'production' => [
+            // ...
+        ]
    ],
 
     /*
@@ -68,5 +75,12 @@ return [
         'local' => [
             // ...
         ],
+
+       /*
+        * Production Aliases
+        */
+        'production' => [
+            // ...
+        ]
     ]
 ];

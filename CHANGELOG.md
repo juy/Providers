@@ -2,8 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## Development
+## 1.0.2
 
+- Add production env feature
 - Add a config sample to README
 - Modify README, remove comma from composer.json part
 
