@@ -1,6 +1,7 @@
 {
     "name": "juy/providers",
     "description": "Laravel package to load providers and aliases use a config file.",
+    "keywords": ["laravel", "provider", "alias", "config"],
     "license": "MIT",
     "type": "library",
     "authors": [
