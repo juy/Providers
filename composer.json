@@ -4,14 +4,19 @@
     "keywords": ["laravel", "provider", "alias", "config"],
     "license": "MIT",
     "type": "library",
+    "homepage": "https://github.com/juy/Providers",
     "authors": [
         {
-            "name": "Sevdin Filiz",
-            "email": "sevdin.filiz@gmail.com",
-            "homepage": "http://www.juysoft.com",
-            "role": "Developer"
+            "name": "Juy Software",
+            "role": "Developer",
+            "email": "package@juysoft.com",
+            "homepage": "http://juysoft.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/juy/Providers/issues",
+        "docs": "https://github.com/juy/Providers/blob/master/README.md"
+    },
     "require": {
         "illuminate/support": "5.1.*|5.2.*"
     },
