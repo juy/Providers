@@ -12,11 +12,25 @@ We usually use a providers file for load local providers, vendor providers, alia
 
 ### Composer package
 
-Add this package to your `composer.json` file and run `composer update` once.
+#### Install
 
-```json
-"juy/providers": "1.*"
 ```
+composer require juy/providers:1.*
+```
+
+#### Remove
+
+```
+composer remove juy/providers
+```
+
+> #### Manual install (Alternative)
+
+> Add this package to your `composer.json` file and run `composer update` once.
+
+> ```json
+>"juy/providers": "1.*"
+>```
 
 ### Service provider
 
