@@ -1,6 +1,6 @@
 # Providers laravel package
 
-[![Laravel](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.3-orange.svg?style=flat-square)](http://laravel.com)
 
 > Laravel package to load providers and aliases use a config file.
 
@@ -12,11 +12,25 @@ We usually use a providers file for load local providers, vendor providers, alia
 
 ### Composer package
 
-Add this package to your `composer.json` file and run `composer update` once.
+#### Install
 
-```json
-"juy/providers": "1.*"
 ```
+composer require juy/providers:1.*
+```
+
+#### Remove
+
+```
+composer remove juy/providers
+```
+
+> #### Manual install (Alternative)
+
+> Add this package to your `composer.json` file and run `composer update` once.
+
+> ```json
+>"juy/providers": "1.*"
+>```
 
 ### Service provider
 
