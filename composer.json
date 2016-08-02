@@ -18,7 +18,7 @@
         "docs": "https://github.com/juy/Providers/blob/master/README.md"
     },
     "require": {
-        "illuminate/support": "5.1.*|5.2.*"
+        "illuminate/support": "5.1.*||5.2.*||5.3.*"
     },
     "autoload": {
         "psr-4": {
