@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Development
+
+- Change vendor keyword to package keyword. [May break application, need re-publish config or manual change]
+
 ## 1.0.3
 
 - Modify README, change installation directives

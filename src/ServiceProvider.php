@@ -29,16 +29,16 @@ class ServiceProvider extends IlluminateServiceProvider
         // If providers config not null
         if ($this->app['config']->get('providers') !== null)
         {
-            // Register App and Vendor providers
+            // Register App and Package providers
             $this->registerServices(array_merge(
                 $this->app['config']->get('providers.providers.app'),
-                $this->app['config']->get('providers.providers.vendor')
+                $this->app['config']->get('providers.providers.package')
             ));
 
-            // Register App and Vendor aliases
+            // Register App and Package aliases
             $this->registerAliases(array_merge(
                 $this->app['config']->get('providers.aliases.app'),
-                $this->app['config']->get('providers.aliases.vendor')
+                $this->app['config']->get('providers.aliases.package')
             ));
 
             // Local

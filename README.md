@@ -4,7 +4,7 @@
 
 > Laravel package to load providers and aliases use a config file.
 
-We usually use a providers file for load local providers, vendor providers, aliases, etc. to try keep clean `config/app.php` file. We have developed this idea and make a package for this.
+We usually use a providers file for load local providers, package providers, aliases, etc. to try keep clean `config/app.php` file. We have developed this idea and make a package for this.
 
 ----------
 
@@ -74,9 +74,9 @@ return [
        ],
 
        /*
-        * Vendor Service Providers
+        * Package Service Providers
         */
-       'vendor' => [
+       'package' => [
             Collective\Html\HtmlServiceProvider::class,
             Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
             Juy\CharacterSolver\ServiceProvider::class,
@@ -115,9 +115,9 @@ return [
         ],
 
         /*
-         * Vendor Aliases
+         * Package Aliases
          */
-        'vendor' => [
+        'package' => [
             'Html' => Collective\Html\HtmlFacade::class,
             'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
             'Active' => Juy\ActiveMenu\Facades\Active::class,
