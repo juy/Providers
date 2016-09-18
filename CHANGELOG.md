@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file. This projec
 ## Development
 
 - Change vendor keyword to package keyword. [May break application, need re-publish config or manual change]
+- Change array test method, "not null" to "recursive count"
 
 ## v1.0.3
 

@@ -26,8 +26,8 @@ class ServiceProvider extends IlluminateServiceProvider
             __DIR__.'/../config/providers.php', 'providers'
         );
 
-        // If providers config not null
-        if ($this->app['config']->get('providers') !== null)
+        // Count the array recursively. Empty config count is 10.
+        if (count($this->app['config']->get('providers'), true) !== 10)
         {
             // Register App and Package providers
             $this->registerServices(array_merge(
