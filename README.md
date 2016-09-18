@@ -1,12 +1,16 @@
 # Providers laravel package
 
-[![Laravel](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.3-orange.svg?style=flat-square)](http://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-5.3.*-orange.svg?style=flat-square)](http://laravel.com) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.txt) [![Latest Version](https://img.shields.io/github/release/juy/Providers.svg?style=flat-square&label=latest version)](https://github.com/juy/Providers/tags)
 
 > Laravel package to load providers and aliases use a config file.
 
-We usually use a providers file for load local providers, vendor providers, aliases, etc. to try keep clean `config/app.php` file. We have developed this idea and make a package for this.
+We usually use a providers file for load local providers, package providers, aliases, etc. to try keep clean `config/app.php` file. We have developed this idea and make a package for this.
 
 ----------
+
+## Supported Laravel versions
+
+- Laravel **5.1** / **5.2** / **5.3** (master branch this branch)
 
 ## Installation
 
@@ -74,9 +78,9 @@ return [
        ],
 
        /*
-        * Vendor Service Providers
+        * Package Service Providers
         */
-       'vendor' => [
+       'package' => [
             Collective\Html\HtmlServiceProvider::class,
             Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
             Juy\CharacterSolver\ServiceProvider::class,
@@ -115,9 +119,9 @@ return [
         ],
 
         /*
-         * Vendor Aliases
+         * Package Aliases
          */
-        'vendor' => [
+        'package' => [
             'Html' => Collective\Html\HtmlFacade::class,
             'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
             'Active' => Juy\ActiveMenu\Facades\Active::class,

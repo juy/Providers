@@ -22,9 +22,9 @@ return [
        ],
 
        /*
-        * Vendor Service Providers
+        * Package Service Providers
         */
-       'vendor' => [
+       'package' => [
            // ...
        ],
 
@@ -63,9 +63,9 @@ return [
         ],
 
         /*
-         * Vendor Aliases
+         * Package Aliases
          */
-        'vendor' => [
+        'package' => [
             // ...
         ],
 

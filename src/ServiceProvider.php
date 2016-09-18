@@ -23,22 +23,22 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         // Default package configuration
         $this->mergeConfigFrom(
-            __DIR__.'/../config/providers.php', 'providers'
+            __DIR__ . '/config/providers.php', 'providers'
         );
 
-        // If providers config not null
-        if ($this->app['config']->get('providers') !== null)
+        // Count the array recursively. Empty config count is 10.
+        if (count($this->app['config']->get('providers'), true) !== 10)
         {
-            // Register App and Vendor providers
+            // Register App and Package providers
             $this->registerServices(array_merge(
                 $this->app['config']->get('providers.providers.app'),
-                $this->app['config']->get('providers.providers.vendor')
+                $this->app['config']->get('providers.providers.package')
             ));
 
-            // Register App and Vendor aliases
+            // Register App and Package aliases
             $this->registerAliases(array_merge(
                 $this->app['config']->get('providers.aliases.app'),
-                $this->app['config']->get('providers.aliases.vendor')
+                $this->app['config']->get('providers.aliases.package')
             ));
 
             // Local
@@ -50,7 +50,7 @@ class ServiceProvider extends IlluminateServiceProvider
                 // Register Local aliases
                 $this->registerAliases($this->app['config']->get('providers.aliases.local'));
             }
-            
+
             // Production
             if ($this->app['config']->get('app.env') === 'production')
             {
@@ -80,7 +80,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__.'/../config/providers.php' => config_path('providers.php')
+            __DIR__ . '/config/providers.php' => config_path('providers.php')
         ], 'config');
     }
 

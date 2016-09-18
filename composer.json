@@ -3,8 +3,13 @@
     "description": "Laravel package to load providers and aliases use a config file.",
     "keywords": ["laravel", "provider", "alias", "config"],
     "license": "MIT",
-    "type": "library",
+    "type": "laravel-package",
     "homepage": "https://github.com/juy/Providers",
+    "support": {
+        "source": "https://github.com/juy/Providers",
+        "issues": "https://github.com/juy/Providers/issues",
+        "docs": "https://github.com/juy/Providers/blob/master/README.md"
+    },
     "authors": [
         {
             "name": "Juy Software",
@@ -13,10 +18,6 @@
             "homepage": "http://juysoft.com"
         }
     ],
-    "support": {
-        "issues": "https://github.com/juy/Providers/issues",
-        "docs": "https://github.com/juy/Providers/blob/master/README.md"
-    },
     "require": {
         "illuminate/support": "5.1.*||5.2.*||5.3.*"
     },
@@ -24,5 +25,7 @@
         "psr-4": {
             "Juy\\Providers\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
