@@ -23,7 +23,7 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         // Default package configuration
         $this->mergeConfigFrom(
-            __DIR__.'/../config/providers.php', 'providers'
+            __DIR__.'/config/providers.php', 'providers'
         );
 
         // Count the array recursively. Empty config count is 10.
@@ -50,7 +50,7 @@ class ServiceProvider extends IlluminateServiceProvider
                 // Register Local aliases
                 $this->registerAliases($this->app['config']->get('providers.aliases.local'));
             }
-            
+
             // Production
             if ($this->app['config']->get('app.env') === 'production')
             {
@@ -80,7 +80,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__.'/../config/providers.php' => config_path('providers.php')
+            __DIR__.'/config/providers.php' => config_path('providers.php')
         ], 'config');
     }
 
