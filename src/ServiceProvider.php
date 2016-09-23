@@ -5,6 +5,11 @@ namespace Juy\Providers;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
+/**
+ * Class ServiceProvider
+ * 
+ * @package Juy\Providers
+ */
 class ServiceProvider extends IlluminateServiceProvider
 {
     /**
