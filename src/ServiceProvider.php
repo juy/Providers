@@ -13,6 +13,13 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 class ServiceProvider extends BaseServiceProvider
 {
     /**
+     * Package name
+     *
+     * @const string
+     */
+    const PACKAGE_NAME = 'providers';
+
+    /**
      * Indicates if loading of the provider is deferred
      *
      * @var bool
@@ -85,7 +92,7 @@ class ServiceProvider extends BaseServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            $this->packagePath('config/config.php'), 'providers'
+            $this->packagePath('config/config.php'), self::PACKAGE_NAME
         );
     }
 
@@ -97,7 +104,7 @@ class ServiceProvider extends BaseServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            $this->packagePath('config/config.php') => config_path('providers.php')
+            $this->packagePath('config/config.php') => config_path(self::PACKAGE_NAME . '.php')
         ], 'config');
     }
     
