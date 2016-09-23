@@ -79,7 +79,6 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     protected function mergeConfig()
     {
-        // Default package configuration
         $this->mergeConfigFrom(
             __DIR__ . '/../config/providers.php', 'providers'
         );
