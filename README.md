@@ -14,29 +14,29 @@ We usually use a providers file for load local providers, package providers, ali
 
 ## Installation
 
-### Composer package
+### Step:1 Install Through Composer
 
 #### Install
 
 ```
-composer require juy/providers:1.*
+➜ composer require juy/providers:1.*
 ```
 
 #### Remove
 
 ```
-composer remove juy/providers
+➜ composer remove juy/providers
 ```
 
 > #### Manual install (Alternative)
 
-> Add this package to your `composer.json` file and run `composer update` once.
+> Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
 
 > ```json
 >"juy/providers": "1.*"
 >```
 
-### Service provider
+### Step 2: Add the Service Provider
 
 Append this line to your **service providers** array in `config/app.php`.
 
@@ -44,19 +44,19 @@ Append this line to your **service providers** array in `config/app.php`.
 Juy\Providers\ServiceProvider::class,
 ```
 
-### Publish config
+### 3. Step 3: Publish Config
 
 Publish config file.
 
 ```
-php artisan vendor:publish --provider="Juy\Providers\ServiceProvider" --tag="config"
+➜ php artisan vendor:publish --provider="Juy\Providers\ServiceProvider" --tag="config"
 ```
 
 ## Usage
 
 You can add providers to `config/providers.php` file.
 
-### A config sample for  as
+### A config sample
 
 ```php
 <?php
