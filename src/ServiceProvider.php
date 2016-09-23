@@ -85,7 +85,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/providers.php', 'providers'
+            $this->packagePath('config/providers.php'), 'providers'
         );
     }
 
@@ -97,7 +97,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__ . '/../config/providers.php' => config_path('providers.php')
+            $this->packagePath('config/providers.php') => config_path('providers.php')
         ], 'config');
     }
     
@@ -129,5 +129,16 @@ class ServiceProvider extends IlluminateServiceProvider
         {
             $aliasLoader->alias($alias, $facade);
         }
+    }
+    
+    /**
+     * Loads a path relative to the package base directory
+     *
+     * @param string $path
+     * @return string
+     */
+    protected function packagePath($path = '')
+    {
+        return sprintf('%s/../%s', __DIR__, $path);
     }
 }
