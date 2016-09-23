@@ -3,14 +3,14 @@
 namespace Juy\Providers;
 
 use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 /**
  * Class ServiceProvider
  * 
  * @package Juy\Providers
  */
-class ServiceProvider extends IlluminateServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred
