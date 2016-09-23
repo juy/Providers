@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. This project is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
 
-## Development
+## v1.0.5
 
 - Move config folder outside src directory
 - Change config name to config.php
