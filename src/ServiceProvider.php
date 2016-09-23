@@ -21,6 +21,9 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function register()
     {
+        // Default package configuration
+        $this->mergeConfig();
+        
         // Count the array recursively. Empty config count is 10.
         if (count($this->app['config']->get('providers'), true) !== 10)
         {
@@ -65,28 +68,35 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function boot()
     {
-        // Register configurations
-        $this->registerConfigurations();
+        // Publish the config file
+        $this->publishConfig();
     }
 
     /**
-     * Register configurations
+     * Default package configuration
      *
      * @return void
      */
-    protected function registerConfigurations()
+    protected function mergeConfig()
     {
         // Default package configuration
         $this->mergeConfigFrom(
             __DIR__ . '/../config/providers.php', 'providers'
         );
+    }
 
-        // Publish the config file
+    /**
+     * Publish the config file
+     *
+     * @return void
+     */
+    protected function publishConfig()
+    {
         $this->publishes([
             __DIR__ . '/../config/providers.php' => config_path('providers.php')
         ], 'config');
     }
-
+    
     /**
      * Register providers
      *
