@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 class ServiceProvider extends IlluminateServiceProvider
 {
     /**
-     * Indicates if loading of the provider is deferred.
+     * Indicates if loading of the provider is deferred
      *
      * @var bool
      */
@@ -75,7 +75,7 @@ class ServiceProvider extends IlluminateServiceProvider
     }
 
     /**
-     * Publish the config file.
+     * Publish the config file
      */
     protected function publishConfig()
     {
@@ -85,7 +85,7 @@ class ServiceProvider extends IlluminateServiceProvider
     }
 
     /**
-     * Register providers.
+     * Register providers
      *
      * @param array $providers
      * @return void
@@ -99,7 +99,7 @@ class ServiceProvider extends IlluminateServiceProvider
     }
 
     /**
-     * Register Aliases.
+     * Register Aliases
      *
      * @param array $aliases
      * @return void
