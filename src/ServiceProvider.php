@@ -85,7 +85,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            $this->packagePath('config/providers.php'), 'providers'
+            $this->packagePath('config/config.php'), 'providers'
         );
     }
 
@@ -97,7 +97,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            $this->packagePath('config/providers.php') => config_path('providers.php')
+            $this->packagePath('config/config.php') => config_path('providers.php')
         ], 'config');
     }
     
