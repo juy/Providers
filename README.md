@@ -22,12 +22,6 @@ We usually use a providers file for load local providers, package providers, ali
 ➜ composer require juy/providers:1.*
 ```
 
-#### Remove
-
-```
-➜ composer remove juy/providers
-```
-
 > #### Manual install (Alternative)
 
 > Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
@@ -35,6 +29,12 @@ We usually use a providers file for load local providers, package providers, ali
 > ```json
 >"juy/providers": "1.*"
 >```
+
+#### Remove
+
+```
+➜ composer remove juy/providers
+```
 
 ### Step 2: Add the Service Provider
 
