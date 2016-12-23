@@ -1,6 +1,6 @@
-# Providers laravel package
+# Providers Laravel Package
 
-[![Laravel](https://img.shields.io/badge/Laravel-5.3.*-orange.svg?style=flat-square)](http://laravel.com) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.txt) [![Latest Version](https://img.shields.io/github/release/juy/Providers.svg?style=flat-square&label=latest version)](https://github.com/juy/Providers/tags)
+[![Latest version](https://img.shields.io/github/release/juy/Providers.svg?style=flat-square&label=Latest version)](https://github.com/juy/Providers/tags) [![Software License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.txt)
 
 > Laravel package to load providers and aliases use a config file.
 
@@ -8,13 +8,13 @@ We usually use a providers file for load local providers, package providers, ali
 
 ----------
 
-### Supported Laravel Versions
+### Supported Laravel versions
 
 - Laravel **5.1** | **5.2** | **5.3**
 
 ## Installation
 
-### Step:1 Install Through Composer
+### Step:1 Install through composer
 
 #### Install
 
@@ -22,7 +22,7 @@ We usually use a providers file for load local providers, package providers, ali
 ➜ composer require juy/providers:1.*
 ```
 
-> #### Manual install (Alternative)
+> #### Manual install (alternative)
 
 > Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
 
@@ -36,7 +36,7 @@ We usually use a providers file for load local providers, package providers, ali
 ➜ composer remove juy/providers
 ```
 
-### Step 2: Add the Service Provider
+### Step 2: Add the service provider
 
 Append this line to your **service providers** array in `config/app.php`.
 
@@ -44,7 +44,7 @@ Append this line to your **service providers** array in `config/app.php`.
 Juy\Providers\ServiceProvider::class,
 ```
 
-### 3. Step 3: Publish Config
+### 3. Step 3: Publish config
 
 Publish config file.
 
@@ -82,7 +82,6 @@ return [
         */
        'package' => [
             Collective\Html\HtmlServiceProvider::class,
-            Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
             Juy\CharacterSolver\ServiceProvider::class,
             Juy\ActiveMenu\ServiceProvider::class,
        ],
@@ -123,7 +122,6 @@ return [
          */
         'package' => [
             'Html' => Collective\Html\HtmlFacade::class,
-            'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
             'Active' => Juy\ActiveMenu\Facades\Active::class,
         ],
 
