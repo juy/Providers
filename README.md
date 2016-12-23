@@ -12,6 +12,11 @@ We usually use a providers file for load local providers, package providers, ali
 
 - Laravel **5.1** | **5.2** | **5.3**
 
+### Requirements
+
+- Laravel >= 5.1 : Laravel 5.1 or above.
+- PHP >= 5.5.9 : PHP 5.5.9 or above on your machine.
+
 ## Installation
 
 ### Step:1 Install through composer
