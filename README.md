@@ -1,6 +1,6 @@
 # Providers Laravel Package
 
-[![Latest version](https://img.shields.io/github/release/juy/Providers.svg?style=flat-square&label=Latest version)](https://github.com/juy/Providers/tags) [![Software License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.txt)
+[![Latest Version on Packagist][ico-version]][link-packagist] [![Software License][ico-license]](LICENSE.txt)
 
 > Laravel package to load providers and aliases use a config file.
 
@@ -126,8 +126,7 @@ return [
          * Package Aliases
          */
         'package' => [
-            'Html' => Collective\Html\HtmlFacade::class,
-            'Active' => Juy\ActiveMenu\Facades\Active::class,
+            'Html' => Collective\Html\HtmlFacade::class
         ],
 
         /*
@@ -154,3 +153,8 @@ return [
 
 This project is open-sourced software licensed under the [MIT License](LICENSE.txt).
 
+
+[ico-version]: https://img.shields.io/packagist/v/juy/providers.svg?style=flat-square
+[link-packagist]: https://packagist.org/packages/juy/providers
+
+[ico-license]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
