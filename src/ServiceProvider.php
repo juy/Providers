@@ -46,6 +46,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->mergeConfig();
         
         // Count the array recursively. Empty config count is 10.
+        // TODO: Need better wat for this
         if (10 !== count($this->app['config']->get('providers'), true))
         {
             // Register App and Package providers
