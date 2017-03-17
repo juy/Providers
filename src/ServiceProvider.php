@@ -46,7 +46,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->mergeConfig();
         
         // Count the array recursively. Empty config count is 10.
-        if (count($this->app['config']->get('providers'), true) !== 10)
+        if (10 !== count($this->app['config']->get('providers'), true))
         {
             // Register App and Package providers
             $this->registerServices(array_merge(
@@ -61,7 +61,7 @@ class ServiceProvider extends BaseServiceProvider
             ));
 
             // Local
-            if ($this->app['config']->get('app.env') === 'local')
+            if ('local' === $this->app['config']->get('app.env'))
             {
                 // Register Local providers
                 $this->registerServices($this->app['config']->get('providers.providers.local'));
@@ -71,7 +71,7 @@ class ServiceProvider extends BaseServiceProvider
             }
 
             // Production
-            if ($this->app['config']->get('app.env') === 'production')
+            if ('production' === $this->app['config']->get('app.env'))
             {
                 // Register Local providers
                 $this->registerServices($this->app['config']->get('providers.providers.production'));
