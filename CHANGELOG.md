@@ -4,36 +4,36 @@ All notable changes to this project will be documented in this file. This projec
 
 ## v1.0.6
 
-- Add .gitattributes, .editorconfig files
+- Add *.gitattributes*, *.editorconfig* files
 - Small improvements
 
 ## v1.0.5
 
 - Move config folder outside src directory
-- Change config name to config.php
+- Change config name to *config.php*
 - Service provider optimizations
 
 ## v1.0.4
 
-- Change vendor keyword to package keyword. [Can be break application, need re-publish config or manual change]
+- Change vendor keyword to package keyword **(Breaking change)**
 - Change the array test method, "not null" to "recursive count"
 - Move config folder
 
 ## v1.0.3
 
-- Modify README, change installation directives
-- Add keywords section to composer.json
-- Add laravel 5.3 support to composer.json
+- Update *README*, change installation directives
+- Add keywords section to *composer.json*
+- Add laravel 5.3 support to *composer.json*
 
 ## v1.0.2
 
 - Add production env feature
-- Add a config sample to README
-- Modify README, remove the comma from composer.json part
+- Add a config sample to *README*
+- Update *README*, remove the comma from *composer.json* part
 
 ## v1.0.1
 
-- Fix README file
+- Update README
 
 ## v1.0.0
 
