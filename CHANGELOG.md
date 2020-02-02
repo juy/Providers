@@ -1,4 +1,4 @@
-# Change log
+# Changelog
 
 All notable changes to this project will be documented in this file. This project is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
 
@@ -15,8 +15,8 @@ All notable changes to this project will be documented in this file. This projec
 
 ## v1.0.4
 
-- Change vendor keyword to package keyword. [May break application, need re-publish config or manual change]
-- Change array test method, "not null" to "recursive count"
+- Change vendor keyword to package keyword. [Can be break application, need re-publish config or manual change]
+- Change the array test method, "not null" to "recursive count"
 - Move config folder
 
 ## v1.0.3
@@ -29,7 +29,7 @@ All notable changes to this project will be documented in this file. This projec
 
 - Add production env feature
 - Add a config sample to README
-- Modify README, remove comma from composer.json part
+- Modify README, remove the comma from composer.json part
 
 ## v1.0.1
 
